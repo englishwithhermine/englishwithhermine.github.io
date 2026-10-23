@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English with Hermine</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#home">Hermine<span>.</span></a>
+  <nav>
+    <a href="#about">О преподавателе</a>
+    <a href="#lessons">Занятия</a>
+    <a href="#games">Игры</a>
+    <a href="#test">Тест</a>
+    <a href="#reviews">Отзывы</a>
+  </nav>
+  <a href="#contact" class="button small">Записаться ↗</a>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div>
+      <p class="eyebrow">✦ ONLINE ENGLISH FOR ADULTS</p>
+      <h1>Stop translating.<br><em>Start speaking.</em></h1>
+      <p class="lead">
+        Английский, на котором вы начнёте говорить.
+        Индивидуальные онлайн-занятия для взрослых с Hermine.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="button">Начать обучение ↗</a>
+        <a href="#games" class="button outline">Попробовать игры</a>
+      </div>
+      <p class="hero-info">✦ Только онлайн &nbsp; ✦ Для взрослых &nbsp; ✦ Живая речь</p>
+    </div>
+
+    <div class="hero-art">
+      <div class="circle"></div>
+      <p>HELLO,<br><em>FUTURE.</em></p>
+      <small>YOUR ENGLISH ERA STARTS HERE</small>
+    </div>
+  </section>
+
+  <div class="banner">
+    REAL CONVERSATIONS ✦ REAL CONFIDENCE ✦ 100% ONLINE
+  </div>
+
+  <section class="section" id="about">
+    <p class="eyebrow">01 / YOUR TEACHER</p>
+    <h2>Meet <em>Hermine.</em></h2>
+    <p class="intro">
+      С первых минут занятия вы погружаетесь в английский язык.
+      Hermine помогает находить нужные слова, понимать грамматику
+      и увереннее общаться без страха ошибок.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <span class="number">01 ↗</span>
+        <h3>Говорим с первого урока</h3>
+        <p>Практика английского языка с самого начала обучения.</p>
+      </article>
+      <article class="card">
+        <span class="number">02 ↗</span>
+        <h3>Индивидуальный подход</h3>
+        <p>Упражнения и темы под ваши интересы и цели.</p>
+      </article>
+      <article class="card">
+        <span class="number">03 ↗</span>
+        <h3>Комфортная атмосфера</h3>
+        <p>Ошибаться можно. Главное — учиться говорить свободнее.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section cream" id="lessons">
+    <p class="eyebrow">02 / LEARNING</p>
+    <h2>English for <em>real life.</em></h2>
+    <p class="intro">Практика для ситуаций, с которыми вы сталкиваетесь в жизни.</p>
+
+    <div class="cards">
+      <article class="card course">
+        <span class="tag">ONLINE · 18+</span>
+        <h3>Everyday English</h3>
+        <p>Разговоры на повседневные темы, словарный запас и грамматика.</p>
+      </article>
+      <article class="card course featured">
+        <span class="tag">ONLINE · 18+</span>
+        <h3>Speaking Confidence</h3>
+        <p>Практика общения, произношения и понимания английской речи.</p>
+      </article>
+      <article class="card course">
+        <span class="tag">ONLINE · 18+</span>
+        <h3>English for Travel</h3>
+        <p>Аэропорт, отель, кафе, путешествия и реальные диалоги.</p>
+      </article>
+    </div>
+    <p class="note">Направления представлены как пример. Перед публикацией уточним программы у Hermine.</p>
+  </section>
+
+  <section class="section" id="games">
+    <p class="eyebrow">03 / PLAY & LEARN</p>
+    <h2>Practice can be <em>fun.</em></h2>
+    <p class="intro">Три мини-игры, которые помогут тренировать английский.</p>
+
+    <div class="tabs">
+      <button class="tab active" data-game="match">Word Match</button>
+      <button class="tab" data-game="grammar">Grammar Challenge</button>
+      <button class="tab" data-game="sentence">Build a Sentence</button>
+    </div>
+
+    <div class="game-box">
+      <div id="gameArea"></div>
+      <p id="gameStatus" class="status"></p>
+      <button class="button small" id="restartGame">Играть заново ↻</button>
+    </div>
+  </section>
+
+  <section class="section cream" id="test">
+    <p class="eyebrow">04 / LEVEL CHECK</p>
+    <h2>What's your <em>level?</em></h2>
+    <p class="intro">
+      Ответьте на 6 вопросов и узнайте, сколько правильных ответов вы наберёте.
+    </p>
+
+    <div class="game-box">
+      <div id="testArea"></div>
+      <button class="button small" id="restartTest" hidden>Пройти ещё раз ↻</button>
+    </div>
+    <p class="note">Это мини-тест для практики, а не официальное определение уровня CEFR.</p>
+  </section>
+
+  <section class="section" id="materials">
+    <p class="eyebrow">05 / LEARNING HUB</p>
+    <h2>English for <em>every day.</em></h2>
+    <div class="cards">
+      <article class="card">
+        <span class="number">✈ TRAVEL</span>
+        <h3>At the airport</h3>
+        <p>“Where is the boarding gate?”</p>
+        <p>Где находится выход на посадку?</p>
+      </article>
+      <article class="card">
+        <span class="number">✦ WORK</span>
+        <h3>At a meeting</h3>
+        <p>“Could you clarify that?”</p>
+        <p>Не могли бы вы это уточнить?</p>
+      </article>
+      <article class="card">
+        <span class="number">☕ EVERYDAY</span>
+        <h3>Making plans</h3>
+        <p>“Does Friday work for you?”</p>
+        <p>Вам подходит пятница?</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section cream" id="reviews">
+    <p class="eyebrow">06 / STUDENT STORIES</p>
+    <h2>Words that <em>matter.</em></h2>
+    <p class="intro">Настоящие отзывы учеников Hermine.</p>
+    <div id="reviewGrid" class="review-grid"></div>
+    <div class="center">
+      <button id="moreReviews" class="button outline">Показать ещё отзывы ↓</button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="eyebrow">07 / YOUR NEXT STEP</p>
+    <h2>Ready to speak <em>English?</em></h2>
+    <p>Ваш следующий шаг к уверенному английскому начинается онлайн.</p>
+    <button id="contactBtn" class="button gold">Записаться на онлайн-занятие ↗</button>
+    <p id="contactNotice" class="note"></p>
+  </section>
+</main>
+
+<footer>
+  <strong>Hermine<span>.</span></strong>
+  <p>English with Hermine · Демоверсия 2026</p>
+  <a href="#home">Наверх ↑</a>
+</footer>
+
+</body>
+</html>
